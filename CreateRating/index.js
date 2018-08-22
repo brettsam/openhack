@@ -37,7 +37,8 @@ module.exports = function (context, req) {
                         timestamp: new Date(),
                         locationName: req.body.locationName,
                         rating: req.body.rating,
-                        userNotes: req.body.userNotes
+                        userNotes: req.body.userNotes,
+                        someNewProperty: "I AM NEW!"
                     };
 
                     context.bindings.rating = rating;
