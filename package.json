@@ -1,0 +1,20 @@
+{
+  "name": "step2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "request": "^2.88.0",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://hacker10940.visualstudio.com/OpenHack/_git/OpenHack"
+  },
+  "author": "",
+  "license": "ISC"
+}
