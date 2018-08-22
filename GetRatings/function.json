@@ -1,0 +1,29 @@
+{
+  "disabled": false,
+  "bindings": [
+    {
+      "authLevel": "anonymous",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req",
+      "methods": [
+        "get",
+        "post"
+      ]
+    },
+    {
+      "name": "ratings",
+      "type": "cosmosDB",
+      "databaseName": "HackDB",
+      "collectionName": "HackCollection",
+      "connectionStringSetting": "MyAccount_COSMOSDB",
+      "sqlQuery": "SELECT c.id, c.userId, c.productId, c.timestamp, c.locationName, c.rating, c.userNotes from c where c.userId = {userId}",
+      "direction": "in"
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "res"
+    }
+  ]
+}

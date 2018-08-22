@@ -1,0 +1,29 @@
+{
+  "disabled": false,
+  "bindings": [
+    {
+      "authLevel": "anonymous",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req",
+      "methods": [
+        "get",
+        "post"
+      ]
+    },
+    {
+      "name": "rating",
+      "type": "cosmosDB",
+      "databaseName": "HackDB",
+      "collectionName": "HackCollection",
+      "connectionStringSetting": "MyAccount_COSMOSDB",
+      "id": "{ratingId}",
+      "direction": "in"
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "res"
+    }
+  ]
+}
