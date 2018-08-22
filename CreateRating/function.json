@@ -12,6 +12,14 @@
       ]
     },
     {
+      "name": "rating",
+      "type": "cosmosDB",
+      "databaseName": "HackDB",
+      "collectionName": "HackCollection",
+      "connectionStringSetting": "MyAccount_COSMOSDB",
+      "direction": "out"
+    },
+    {
       "type": "http",
       "direction": "out",
       "name": "res"

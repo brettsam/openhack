@@ -1,1 +1,7 @@
-{}
+{
+    "logging": {
+        "LogLevel": {
+            "Default": "trace"
+        }
+    }
+}

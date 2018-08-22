@@ -36,9 +36,11 @@ module.exports = function (context, req) {
                         productId: req.body.productId,
                         timestamp: new Date(),
                         locationName: req.body.locationName,
-                        rating: 5,
+                        rating: req.body.rating,
                         userNotes: req.body.userNotes
                     };
+
+                    context.bindings.rating = rating;
 
                     context.res = {
                         statusCode: 200,
